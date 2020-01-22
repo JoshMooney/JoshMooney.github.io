@@ -10,7 +10,7 @@ description: 'A Week long games jam featuring a theme choosen from suggestions o
 
 There is nothing here Opps 
 
-## Day 2
+## Day 2: Upgrades and Core Mechanics
 
 All in all it was a good day of development, I spent a couple hours in the morning; Took a break to meet Amy for lunch and then worked on it for the afternoon into the night were I had to eventually pull myself away. I got the following done:
 
@@ -42,3 +42,24 @@ The second chance mechanic is the center point of this whole games jam so I figu
 [FINAL IMAGE HERE]
 
 With the coming week being a busy one in work, unfortunitly I am not sure how much time I will have to work on it hence I am aiming low and so happy with my progress
+
+## Day 3: Animations
+
+This was a first short dev day so I focuesed on clean up and tweaking just to 
+
+This being the first short day of dev I was interested in getting as much quality into the game in as small of a time as possible 
+
+## Day 4: State Machines
+
+## Day 5: AStar
+
+
+## Day 6: Burnout and Stress
+Got home from work, this being demo day I was working til around half 7, getting deadlines and attending remote demo via hangouts. Burn in began to set it with cooking, cleaning, working late and demo stress I didn't feel up to developing, the hope being I would be fresh for the final weekend.
+
+Burn out set in so took the day off
+
+## Day 7 - End of Jam: Pivot and Acceptance 
+This was difficult for me to do but I decided halve way through Friday night I came to the realisation that to get the Jam done I would have to be flat out, this is something I am ofcourse used too but this weekend fell on possible the most important weekend of the year for me this was my Anniversary, 11 years to be specific. Amy is my favourite person my partner in crime and I wouldn't be half the man I am if it wasn't for her. So I prioritsed my personal life over the Jam.
+
+It was a strange sense of calm that washed over me in the minutes after coming to this decision. I am quiet a driven person but I am the first to admit I am also tough on myself when it comes to dead lines I feel like if I dont hold myself accountable who will, if I am making excuses at the end then I didnt apply myself along the way. This is usually my down turn but I am enjoying the Jam and my game too much to rush and put up only 10% of what I wanted for the Jam so my descion is to drop the deadline of the Jam and continue to develop the game in my free time. I am going to give it a maximum of 3-4 weeks. Seeing what I can get done in a week I would love to take the foot off the gas and enjoy the ride alittle more. So hopefully some time in February there will be a `final` update for my Godot Wild Jam #17 entry.
