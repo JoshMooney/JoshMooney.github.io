@@ -30,3 +30,5 @@ I did however get a few good starting point tasks done that being setting up a T
 
 
 [wildcards-png]: {{ site.url }}/assets/wild_jam_17/wild_cards.png
+[temp-assets-png]: {{ site.url }}/assets/wild_jam_17/wild_cards.png
+[trello-board-png]: {{ site.url }}/assets/wild_jam_17/wild_cards.png
