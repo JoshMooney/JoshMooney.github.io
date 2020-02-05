@@ -29,7 +29,7 @@ I got a pretty good idea of the kind of game I want to make, I am aiming for a t
 
 I did however get a few good starting point tasks done that being setting up a Trello board with a list of all the mechanics I hope to implement and short checklist of features required for that mechanic. Set up the github repository, source control is vital less code needing to be rewritten or copied to and from USB drives the better. Also something I have never done this early into development of a game I went searching for game art, I wanted to get a feel for what was out there and what kind of atmosphere I can achieve using free assets after all I am cheap and the internet has near endless amounts of resources that can be scoured
 
-[IMAGE]{}
+![IMAGE]({{ site.url }}/assets/wild_jam_17/Day2.gif)
 
 ## Day 2: Upgrades and Core Mechanics
 
