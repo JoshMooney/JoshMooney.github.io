@@ -17,7 +17,7 @@ menu_settings:
     - title: 'Sandbox'
       url: '/sandbox/'
     - title: 'About'
-      url: '/about.html'
+      url: '/about'
 
 footer_settings:
   footer_tagline: This is the footer_tagline and has not been set yet Opps.
@@ -58,13 +58,13 @@ social_settings:
   stack-overflow_url: 'https://stackoverflow.com/users/8510794'
 
 color_settings:
-  background_color: '#ffffff'
-  background_alt_color: '#f4f5f6'
-  text_dark_color: '#2A2F36'
-  text_medium_color: '#6C7A89'
-  text_light_color: '#ABB7B7'
-  accent_color: '#3498db'
-  border_color: '#dddddd'
+  background_color: '#35363A'
+  background_alt_color: '#202124'
+  text_dark_color: '#EAEAEA'
+  text_medium_color: '#C1C1C1'
+  text_light_color: '#919191'
+  accent_color: '#2dbe60'
+  border_color: '#202124'
   hero_background_color: '#132930'
   hero_text_color: '#ffffff'
   error_color: '#D64541'
