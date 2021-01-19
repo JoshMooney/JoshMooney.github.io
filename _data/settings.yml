@@ -10,16 +10,14 @@ menu_settings:
   menu_items:
     - title: 'Home'
       url: '/'
-    # - title: 'Blog'
-    #   url: '/blog/'
-    # - title: 'Tech'
-    #   url: '/blog/tech/'
-    # - title: 'Food'
-    #   url: '/blog/food/'
-    # - title: 'Life'
-    #   url: '/blog/life/'
+    - title: 'Blog'
+      url: '/blog/'
+    - title: 'Personal Projects'
+      url: '/projects/'
+    - title: 'Sandbox'
+      url: '/sandbox/'
     - title: 'About'
-      url: '/about'
+      url: '/about.html'
 
 footer_settings:
   footer_tagline: This is the footer_tagline and has not been set yet Opps.

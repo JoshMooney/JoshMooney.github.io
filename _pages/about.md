@@ -2,7 +2,7 @@
 title: About me
 subtitle: subtitle is not set yet Opps
 description: description is not set yet Opps
-featured_image: "https://source.unsplash.com/HH4WBGNyltc/1600x900"
-published: false
+featured_image: "/assets/backdrops/about.jfif"
+published: true
 ---
-There is nothing here Opps
+Hello about me, There is nothing here Opps
