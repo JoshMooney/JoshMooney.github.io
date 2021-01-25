@@ -1,14 +1,16 @@
+<!-- Footer template to be applied to all pages -->
 <footer class="footer">
-
 	<div class="wrap">
-
+		<!-- Append the footer tagline found within the settings.yml -->
 		<p class="footer__text">{{ site.data.settings.footer_settings.footer_tagline }}</p>
 
+		<!-- Copyright info followed by site name -->
 		<div class="footer__copyright">
 			<span>© {{ 'now' | date: "%Y" }} {{ site.data.settings.basic_settings.site_title }}</span>
 			{% comment %}<a href="https://jekyllthemes.io" target="_blank">Jekyll Themes</a>{% endcomment %}
 		</div>
 
+		<!-- Includes social links -->
 		{% include socials.html %}
 
 	</div>

@@ -2,51 +2,118 @@
 layout: default
 title: Projects
 #description:
-featured_image: "/assets/backdrops/code.jpg"
+featured_image: "/assets/backdrops/sandbox_backdrop.jpeg"
+
+hero_title: "This is my Jekyll Sandbox"
+hero_subtitle: "This page is used for testing new features and is not intended to be seen by users, overt your eyes!"
 ---
 
-<section class="hero">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
 
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+</style>
+</head>
+<body>
+
+<!-- Hero is the top card image with title -->
+<section class="hero">
+	<!-- Load the background image, in this case pulled from the liquid tags -->
 	<div class="hero__image" style="background-image: url({{ page.featured_image }})">
 		<div class="hero__overlay"></div>
 	</div>
 
+	<!-- Hero card content -->
 	<div class="wrap">
-
-		<h1>I'm Josh. Game Dev and Programming blog.</h1>
-		<p>I make games, and sometimes do other things.</p>
-
+		<!-- Hero card title -->
+		<h1>{{page.hero_title}}</h1>
+		<p>{{page.hero_subtitle}}</p>
+		
+		<!-- Insert the social icons using injection -->
 		{% include socials.html %}
-
 	</div>
-
 </section>
 
-<head>
-	<link rel="stylesheet" href="timeline.css">
-</head>
 
+<!-- Page Content -->
 <section class="listing">
-
 	<div class="wrap">
+		<!-- Generate a post -->
 		<article class="post">
+			<h2>World this is the title for the page</h2>
+			<p>
+				This will be filled with content and interesting information regarding my career as a whole
+			</p>
+			<br>
+			<button class="accordion">Section 1</button>
+						<div class="panel">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
 
-			<div class="timeline">
-				<div class="container left">
-				  <div class="content">
-					<h2>2017</h2>
-					<p>Lorem ipsum..</p>
-				  </div>
-				</div>
-				<div class="container right">
-				  <div class="content">
-					<h2>2016</h2>
-					<p>Lorem ipsum..</p>
-				  </div>
-				</div>
-			  </div>
+						<button class="accordion">Section 2</button>
+						<div class="panel">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
 
+						<button class="accordion">Section 3</button>
+						<div class="panel">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
 		</article>
 	</div>
-
 </section>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

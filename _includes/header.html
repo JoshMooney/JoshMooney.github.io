@@ -1,27 +1,33 @@
+<!-- Header template to be applied to all pages -->
 <header class="header">
-
 	<div class="wrap">
-
 		{% if site.data.settings.header_settings.logo_image %}
-		<a href="/" class="header__logo">
-			<img src="{{ site.data.settings.header_settings.logo_image }}" class="header__logo__img">
-		</a>
+			<!-- Adds a site logo if one is availible  -->
+			<a href="/" class="header__logo">
+				<img src="{{ site.data.settings.header_settings.logo_image }}" class="header__logo__img">
+			</a>
 		{% else %}
-		<a href="/" class="header__title">
-			{{ site.data.settings.basic_settings.site_title }}
-		</a>
+			<!-- Otherwise just adds a title link with the my name -->
+			<a href="/" class="header__title">
+				{{ site.data.settings.basic_settings.site_title }}
+			</a>
 		{% endif %}
 
+		<!-- Adds the site navigation menu -->
 		<div class="menu">
+			<!-- Menu toggle, this should only really be visible when using a mobile device -->
 			<div class="menu__toggle js-menu-toggle">
 				<div class="menu__toggle__icon"><span></span></div>
 			</div>
+
+			<!-- Adds the site menu -->
 			<div class="menu__wrap">
 				<ul class="menu__list">
+					<!-- For every item in the menu settings found in the settings.yml add a new menu item -->
 					{% for item in site.data.settings.menu_settings.menu_items %}
-					<li class="menu__list__item">
-						<a href="{{ item.url }}" class="menu__list__item__link">{{ item.title }}</a>
-					</li>
+						<li class="menu__list__item">
+							<a href="{{ item.url }}" class="menu__list__item__link">{{ item.title }}</a>
+						</li>
 					{% endfor %}
 				</ul>
 			</div>
