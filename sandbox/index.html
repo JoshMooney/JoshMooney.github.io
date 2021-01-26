@@ -12,41 +12,67 @@ hero_subtitle: "This page is used for testing new features and is not intended t
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
+	/* Accordion styling  */
+	.accordion {
+		background-color: #202124;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		/* font-size: 15px; */
+		transition: 0.4s;
+	}
 
-.active, .accordion:hover {
-  background-color: #ccc; 
-}
+	.active, .accordion:hover {
+		background-color: #ccc; 
+	}
 
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
+	.panel {
+		/* padding: 0 18px; */
+		display: none;
+		background-color: #35363A;
+		overflow: hidden;
+	}
 
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
+	.accordion:after {
+		content: '\02795'; /* Unicode character for "plus" sign (+) */
+		font-size: 13px;
+		color: #777;
+		float: right;
+		margin-left: 5px;
+	}
 
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
+	.active:after {
+		content: "\2796"; /* Unicode character for "minus" sign (-) */
+	}
+
+	/* Card within Accordion Styleing */
+	.offeringsItem {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 5px;
+		padding: 5px;
+		/* border: 2px solid #dedede; */
+	}
+
+	.offeringsItem:nth-of-type(odd) {
+		flex-flow: row-reverse;
+	}
+
+	.offeringsContent, .offeringsImg {
+		margin: 5px;
+	}
+
+	.offeringsContent {
+		flex: 1;
+	}
+
+	.offeringsImg img {
+		max-width: 100%;
+	}
 </style>
 </head>
 <body>
@@ -74,26 +100,54 @@ hero_subtitle: "This page is used for testing new features and is not intended t
 <section class="listing">
 	<div class="wrap">
 		<!-- Generate a post -->
-		<article class="post">
+		<article class="single-post">
 			<h2>World this is the title for the page</h2>
-			<p>
-				This will be filled with content and interesting information regarding my career as a whole
-			</p>
+				<p>
+					This will be filled with content and interesting information regarding my career as a whole
+				</p>
+			
 			<br>
-			<button class="accordion">Section 1</button>
-						<div class="panel">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						</div>
 
-						<button class="accordion">Section 2</button>
-						<div class="panel">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						</div>
 
-						<button class="accordion">Section 3</button>
-						<div class="panel">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						</div>
+			<button class="accordion">
+				<h2>Unity</h2>
+			</button>
+			<div class="panel">
+				<div class="offerings">
+					<div class="offeringsItem">
+					  <div class="offeringsImg">
+						<img src="https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&h=300&w=300">
+					  </div>
+					  <div class="offeringsContent">
+						  <h4>A test title header</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					  </div>
+					</div>
+
+					<hr>
+
+					<div class="offeringsItem">
+					  <div class="offeringsImg">
+						<img src="https://images.pexels.com/photos/97082/weimaraner-puppy-dog-snout-97082.jpeg?auto=compress&cs=tinysrgb&h=300&w=300">
+					  </div>
+					  <div class="offeringsContent">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					  </div>
+					</div>
+				  </div>
+			</div>
+
+
+			<button class="accordion">Section 2</button>
+			<div class="panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+
+			<button class="accordion">Section 3</button>
+			<div class="panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
 		</article>
 	</div>
 </section>
